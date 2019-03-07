@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<input type="text" id="myInput" onkeyup="mySearch()" placeholder="Search for categories.." title="">
+<ul class="filterSection">
+	<li>
+		<strong>Show:</strong>
+		<input id="brands" type="checkbox" value="brands" class="parent">
+		<label>Brands</label>
+	</li>
+	<li>
+		<input id="media" type="checkbox" value="media" class="parent">
+		<label>Media</label>
+	</li>
+	<li>
+		<input id="technology" type="checkbox" value="technology" class="parent">
+		<label>Technology</label>
+	</li>
+</ul>
+
+<ul id="ItemsToFilter">
+	<li data-type="brands"><input type="checkbox" class="brands" class="child"><a href="#">category 1</a></li>
+	<li data-type="media"><input type="checkbox" class="media" class="child"><a href="#">category 2</a></li>
+	<li data-type="technology"><input type="checkbox" class="technology" class="child"><a href="#">category 3</a></li>
+	<li data-type="brands"><input type="checkbox" class="brands" class="child"><a href="#">category 4</a></li>
+	<li data-type="media"><input type="checkbox" class="media" class="child"><a href="#">category 5</a></li>
+	<li data-type="technology"><input type="checkbox" class="technology" class="child"><a href="#">category 6</a></li>
+	<li data-type="brands"><input type="checkbox" class="brands" class="child"><a href="#">category 7</a></li>
+	<li data-type="media"><input type="checkbox" class="media" class="child"><a href="#">category 8</a></li>
+	<li data-type="technology"><input type="checkbox" class="technology" class="child"><a href="#">category 9</a></li>
+	<li data-type="brands"><input type="checkbox" class="brands" class="child"><a href="#">category 10</a></li>
+	<li data-type="media"><input type="checkbox" class="media" class="child"><a href="#">category 11</a></li>
+</ul>
+
+<p id="output"></p>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
